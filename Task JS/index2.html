@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger — Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <header class="masthead">
+        <h2>Ledger</h2>
+        <p class="tagline">a running account of what needs doing</p>
+    </header>
+
+    <div class="entry-row">
+        <input type="text" id="taskInput" placeholder="What needs doing?" autocomplete="off">
+        <button id="addBtn">Add</button>
+    </div>
+
+    <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter tasks">
+            <button id="showAllBtn" class="filter-btn is-active" data-filter="all">All</button>
+            <button id="showActiveBtn" class="filter-btn" data-filter="active">Active</button>
+            <button id="showDoneBtn" class="filter-btn" data-filter="done">Done</button>
+        </div>
+        <span id="counter" class="counter"></span>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div id="emptyState" class="empty-state" hidden>
+        <p id="emptyStateText">Nothing here yet. Add your first task above.</p>
+    </div>
+
+    <div class="footer-row">
+        <button id="clearDoneBtn">Clear done</button>
+    </div>
+
+</div>
+
+<script src="nav.js"></script>
+</body>
+</html>
