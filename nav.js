@@ -29,8 +29,6 @@ function loadTasks() {
             console.error('Could not parse saved tasks, starting fresh.', err);
         }
     }
-
-    // Starter tasks for a first-time visitor
     tasks = [
         { id: crypto.randomUUID(), text: 'Add your first task above', done: false },
         { id: crypto.randomUUID(), text: 'Click a circle to mark it done', done: true },
