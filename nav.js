@@ -48,12 +48,9 @@ function getFilteredTasks() {
     if (filter === 'done')   return tasks.filter(t => t.done);
     return tasks;
 }
-
-// ---------- Render ----------
 function render() {
     const visible = getFilteredTasks();
 
-    // Empty state
     if (visible.length === 0) {
         emptyState.hidden = false;
         taskList.hidden = true;
