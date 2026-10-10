@@ -2,7 +2,6 @@ let tasks = [];
 let filter = 'all';   
 const STORAGE_KEY = 'ledger.tasks.v1';
 
-// ---------- DOM references ----------
 const taskInput    = document.getElementById('taskInput');
 const addBtn       = document.getElementById('addBtn');
 const taskList     = document.getElementById('taskList');
@@ -17,7 +16,6 @@ const filterBtns = {
     done:   document.getElementById('showDoneBtn'),
 };
 
-// ---------- Persistence ----------
 function loadTasks() {
     const raw = localStorage.getItem(STORAGE_KEY);
 
@@ -39,7 +37,6 @@ function saveTasks() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
 }
 
-// ---------- Helpers ----------
 function escapeHtml(str) {
     const div = document.createElement('div');
     div.textContent = str;
