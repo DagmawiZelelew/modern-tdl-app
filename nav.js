@@ -75,8 +75,6 @@ function render() {
             <button class="task-delete" aria-label="Delete task" title="Delete">&times;</button>
         </li>
     `).join('');
-
-    // Counter
     const activeCount = tasks.filter(t => !t.done).length;
     counter.textContent = `${activeCount} active / ${tasks.length} total`;
 
