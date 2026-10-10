@@ -1,6 +1,4 @@
-/* ---------------------------------------
-   Tokens
---------------------------------------- */
+
 :root {
     --paper: #F5F3EE;
     --surface: #FFFFFF;
@@ -38,10 +36,6 @@ body {
     max-width: 560px;
     margin: 0 auto;
 }
-
-/* ---------------------------------------
-   Masthead
---------------------------------------- */
 .masthead {
     border-bottom: 2px solid var(--ink);
     padding-bottom: 14px;
@@ -64,10 +58,6 @@ body {
     font-style: italic;
     font-family: var(--serif);
 }
-
-/* ---------------------------------------
-   Entry row
---------------------------------------- */
 .entry-row {
     display: flex;
     gap: 8px;
@@ -110,9 +100,7 @@ body {
 #addBtn:hover { background: var(--pine-dark); }
 #addBtn:active { transform: translateY(1px); }
 
-/* ---------------------------------------
-   Toolbar: filters + counter
---------------------------------------- */
+
 .toolbar {
     display: flex;
     align-items: center;
