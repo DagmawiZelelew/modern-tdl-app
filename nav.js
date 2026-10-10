@@ -1,11 +1,5 @@
-// =========================================================
-// Ledger — a small persistent task manager
-// =========================================================
-
-// ---------- State ----------
-let tasks = [];          // array of { id, text, done }
-let filter = 'all';      // 'all' | 'active' | 'done'
-
+let tasks = [];      
+let filter = 'all';   
 const STORAGE_KEY = 'ledger.tasks.v1';
 
 // ---------- DOM references ----------
